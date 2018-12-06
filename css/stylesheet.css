@@ -1,0 +1,145 @@
+@charset "utf-8";
+
+*{
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+	color : #212121;
+	font-weight:100;
+	text-align: center;
+}
+
+body {
+	background-color: gainsboro;
+}
+
+iframe {
+	width: 100%;
+	max-width: 800px;
+	height: 400px;
+}
+
+.gif {
+	width: 100%;
+	max-width: 800px;
+}
+
+.gif-small {
+	max-width: 600px;
+}
+
+.primary {
+	font-family: 'Bungee', cursive;
+}
+
+p {
+	font-size: 1.2em;
+	margin: 3em 0;
+}
+
+h1 {
+	font-family: 'Bungee', cursive;
+	font-size: 3.4em;
+	width: 100%;
+	margin: 0 auto;
+	margin: 0.4em 0;
+	text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+}
+
+
+button {
+	background: white;
+	width: 80%;
+	margin: 0.4em 1em;
+	padding: 0.8em;
+	border-radius: 4px;
+	border: 2px solid black;
+	transform: scale3d(1, 1, 1);
+	transition-property: transform, opacity, visibility;
+	transition-duration: 0.25s, 0.15s, 0s;
+	transition-timing-function: cubic-bezier(0.31, 0.32, 0.38, 2), linear, linear;
+	transition-delay: 0s, 0s, 0.15s;
+}
+
+button:hover {
+
+	transform: scale3d(1.05, 1.05, 1);
+}
+
+h2 {
+	margin: 1em;
+	font-size: 2.4em;
+}
+
+.h2-first {
+	font-size: 1.6em;
+}
+
+h3 {
+	font-size: 1.6em;
+}
+
+.padding-bottom-top {
+	padding: 2em 0;
+}
+
+.subcontainer {
+	margin: 0 auto;
+	max-width: 90%;
+}
+
+.container-grey {
+		width: 100%;
+		height: 100%;
+		padding-bottom: 5em;
+		background-color: gainsboro;
+		-webkit-clip-path: polygon(0 1%, 100% 0%, 100% 90%, 0 100%);
+		clip-path: polygon(0 1%, 100% 0%, 100% 90%, 0 100%);
+}
+
+.container-white {
+		width: 100%;
+		height: 100%;
+		padding-bottom: 5em;
+		background-color: white;
+		-webkit-clip-path: polygon(0 1%, 100% 0%, 100% 100%, 0 85%);
+		clip-path: polygon(0 1%, 100% 0%, 100% 100%, 0 85%);
+}
+
+.sharebtns {
+	margin: 0 auto;
+}
+
+
+@media (min-width: 768px) {
+
+	h1 {
+		font-size: 6em;
+	}
+
+	.subcontainer {
+		margin: 0 auto;
+		max-width: 60%;
+	}
+
+	.button-container {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	button {
+		margin: 1em;
+		width: 50%;
+	}
+
+}
